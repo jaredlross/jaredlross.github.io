@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+
+<h2 class="post-list-heading">
+Welcome to the Hillandale Elementary PTA
+</h2>
+
+<p>
+The Parent-Teacher Association at Hillandale Elementary, located in Durham, North Carolina, serves as a powerful voice for all the children of Hillandale.  We advocate for the education and well-being of every child, and we would love your help in making Hillandale the best place for your child to learn and grow!
+<p>
+
+<!-- 
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+ -->
+</div>
